@@ -5,7 +5,7 @@ const client = new Client();
 let UserModel = require('./models/BlackListSys');
 client.on('ready', _ => {
     console.log('Ready');
-    connect("mongodb+srv://BlackListSys:BlackListSys@cluster0.hqvnd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
+    connect("MONGODB_URL_HERE", {
         useNewUrlParser: true,
         useFindAndModify: false,
         useUnifiedTopology: true
@@ -65,4 +65,4 @@ client.on('message', async (message) => {
 });
 
 
-client.login('NzYwNTI1MzI4NDUwOTc3Nzky.X3NUaA.jcfWSNJuyB0X3IGOaPwPZXyB2yI');
+client.login('');
